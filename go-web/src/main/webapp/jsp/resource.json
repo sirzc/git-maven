@@ -1,0 +1,37 @@
+[{
+	"id":1,
+	"pId":0,
+	"name":"设备管理",
+	"url":"",
+	"open":1
+},{
+	"id":11,
+	"pId":1,
+	"name":"设备添加",
+	"url":"/equ/add",
+	"open":0
+},{
+	"id":12,
+	"pId":1,
+	"name":"设备修改",
+	"url":"/equ/update",
+	"open":0
+},{
+	"id":2,
+	"pId":0,
+	"name":"部门管理",
+	"url":"",
+	"open":0
+},{
+	"id":21,
+	"pId":2,
+	"name":"部门添加",
+	"url":"/emp/add",
+	"open":0
+},{
+	"id":22,
+	"pId":2,
+	"name":"部门修改",
+	"url":"/emp/update",
+	"open":0
+}]

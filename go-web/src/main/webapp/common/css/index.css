@@ -1,0 +1,124 @@
+.ztree * {
+	/*font-size: 8pt;*/
+	font-family: "Microsoft Yahei", Verdana, Simsun, "Segoe UI Web Light",
+		"Segoe UI Light", "Segoe UI Web Regular", "Segoe UI",
+		"Segoe UI Symbol", "Helvetica Neue", Arial
+}
+
+.ztree li ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.ztree li { /*border-top:1px solid steelblue;*/
+	width: 240px;
+	line-height: 38px;
+	border-top: 1px solid #5a87b5;
+	border-bottom: 1px solid #335A85;
+	border-right: 1px solid #335A85;
+	background: url(../img/index_img/menu-item.jpg);
+	padding: 0px;
+	margin: 0px;
+}
+
+.ztree li ul li {
+	/*background: #00466B;*/
+	width: 239px;
+	background: #F2F2F2;
+	border-top: 1px solid #FCFCFC !important;
+	border-bottom: 1px solid #E4E8ED !important;
+	border-right-color: #E4E8ED !important;
+}
+
+.ztree li ul li a span {
+	font-size: 15px;
+	color: black;
+}
+
+.ztree li a {
+	width: 95%;
+	height: 38px;
+	color: white;
+	font-size: 12px;
+	text-shadow: 0 0px 0px #333;
+	padding-top: 0px;
+	margin-left:  20px;
+}
+
+.ztree li a:hover {
+	text-decoration: none;
+	/*text-decoration: underline;*/
+}
+
+.ztree li a span.button.switch {
+	visibility: hidden
+}
+
+.ztree.showIcon li a span.button.switch {
+	visibility: visible
+}
+
+.ztree li a.curSelectedNode {
+	background-color: transparent;
+	border: 0;
+	height: 38px;
+}
+
+.ztree li span {
+	line-height: 38px;
+}
+
+.ztree li span.button {
+	margin-left: 12px;
+}
+
+.ztree li span.button.switch {
+	width: 16px;
+	height: 16px;
+}
+
+.ztree li a.level0 span {
+	font-size: 125%;
+	font-weight: bold;
+}
+ 
+/*
+.ztree li span.button {
+	background-image: url("left_menuForOutLook.png");
+	*background-image: url("left_menuForOutLook.gif")
+}
+*/
+.ztree li span.button.switch.level0 {
+	width: 20px;
+	height: 20px
+}
+
+.ztree li span.button.switch.level1 {
+	width: 20px;
+	height: 20px;
+}
+
+
+
+.ztree li span.button.noline_docu.level1{
+	background: url(../img/index_img/right1.png) no-repeat;
+	background-size: 20px;
+	margin-top: 10px;
+	position: absolute;
+}
+
+
+/* button level0 switch noline_open */
+.ztree li span.button.level0.noline_open.switch {
+	background: url(../img/index_img/minus.png) no-repeat;
+	background-size: 20px;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.ztree li span.button.level0.noline_close.switch {
+	background: url(../img/index_img/add.png) no-repeat;
+	background-size: 20px;
+	margin-top: 10px;
+	position: absolute;
+}

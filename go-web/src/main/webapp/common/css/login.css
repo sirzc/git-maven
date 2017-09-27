@@ -1,0 +1,192 @@
+@CHARSET "UTF-8";
+#all_box {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url(../img/body.jpg);
+	overflow: hidden;
+	/* 内容会被修剪，但是浏览器不会显示供查看内容的滚动条。 */
+	position: relative;
+	/* 生成相对定位的元素，相对于其正常位置进行定位。 */
+}
+
+#top_box {
+	height: auto;
+}
+
+#top_box img {
+	height: 50px;
+	margin: 0px 50px;
+}
+
+#center_box {
+	background: gray;
+	height: 540px;
+}
+
+#center_box .pic_box img {
+	width: 100%;
+	height: 540px;
+	position: absolute;
+}
+/*********************************【right 登录部分 】**********************************/
+.login_box {
+	width: 350px;
+	height: 400px;
+	float: right;
+	margin-top: 70px;
+	/*margin-right: 45px;*/
+	right: 125px;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 1em #d3d5c7;
+	/* 添加盒子阴影发光 */
+}
+/* 登录  顶部   */
+.login_box .right_top {
+	width: 100%;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	font-size: 22px;
+	font-weight: 700;
+	color: #e4393c;
+}
+/* 登录   中部   */
+.login_box .right_center {
+	width: 100%;
+	height: 304px;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+#input_box .item {
+	width: 300px;
+	height: 40px;
+	/*border: 1px solid yellow;*/
+	margin: 50px auto -40px;
+	position: relative;
+}
+
+#input_box .item .item_span {
+	display: block;
+	float: left;
+	background: #eee;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	border: 1px solid #aaa;
+	border-right: 0;
+}
+
+#input_box .item span img {
+	width: 20px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#input_box .item input {
+	border: 1px solid #aaa;
+	width: 256px;
+	height: 40px;
+	outline: none;
+	text-indent: 1em;
+	font-size: 15px;
+}
+
+#input_box .item .clear_btn {
+	position: absolute;
+	z-index: 20;
+	right: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	/*border: 1px solid red;*/
+	background: url(../img/x.png) no-repeat;
+	background-size: 20px;
+	cursor: pointer;
+	display: none;
+	/* inlin 默认。此元素会被显示为内联元素，元素前后没有换行符。  block 此元素将显示为块级元素，此元素前后会带有换行符。 */
+}
+
+/*修改时间 2017/4/1 22：18*/
+/*
+#input_box .login{
+	width: 300px;
+	height: 40px;
+	margin: 70px auto;
+	position: relative;
+}
+*/
+ 
+#input_box .login{
+	width: 300px;
+	height: 40px;
+	border: 1px solid #e85356;
+	border-radius: 3px;
+	margin: 70px auto;
+	position: relative;
+	background-color: #B22222;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+}
+ 
+
+/* 登录 底部   */
+.login_box .right_bottom {
+	width: 100%;
+	height: 48px;
+}
+
+.login_box .right_bottom div {
+	width: 50%;
+	text-align: center;
+	line-height: 48px;
+	font-size: 18px;
+	position: absolute;
+}
+
+#forget_pass {
+	left: 0px;
+}
+
+#new_register {
+	right: 0px;
+}
+
+#new_register .new_l span {
+	background: #e4393c;
+	color: #fff;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	line-height: 20px;
+	margin-left: 30px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#new_register .new_r {
+	margin-left: 48px;
+}
+
+#new_register .new_r a:hover {
+	color: #e4393c;
+}
+
+#bottom_box {
+	height: 40px;
+}
+
+#bottom_box div {
+	font-size: 15px;
+	text-align: center;
+	line-height: 40px;
+	color: #79a7a5;
+}
