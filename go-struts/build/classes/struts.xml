@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- struts的action必须放在指定包中 -->
+	<package name="hello" namespace="/" extends="struts-default">
+		<action name="helloWorld" class="com.go.action.HelloWorldAction">
+			<result name="success">/success.jsp</result>
+		</action>	
+	</package>
+</struts>
