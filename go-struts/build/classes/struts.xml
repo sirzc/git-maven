@@ -3,10 +3,25 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
+	<!--常量配置 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<!-- 设置使用开发者模式 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 设置默认编码集 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
 	<!-- struts的action必须放在指定包中 -->
 	<package name="hello" namespace="/" extends="struts-default">
 		<action name="helloWorld" class="com.go.action.HelloWorldAction">
 			<result name="success">/success.jsp</result>
-		</action>	
+		</action>
+		<action name="login_error" class="com.go.action.LoginAction"
+			method="error">
+			<result>/error.jsp</result>
+		</action>
+		<action name="userLogin" class="com.go.action.UserLoginAction">
+			<result name="success" type="redirect">/success.jsp</result>
+			<result name="error" type="dispatcher">/error.jsp</result>
+		</action>
 	</package>
+
 </struts>

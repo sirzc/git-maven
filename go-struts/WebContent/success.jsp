@@ -9,5 +9,6 @@
 <body>
 	<h1>跳转成功</h1>
 	<p>this is success jsp</p>
+	用户名：<%=request.getAttribute("user.username") %>
 </body>
 </html>
