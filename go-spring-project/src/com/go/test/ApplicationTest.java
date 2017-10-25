@@ -61,4 +61,13 @@ public class ApplicationTest {
 	public void myBeanByStatic() {
 		System.out.println(BeanUntil.getBean("myBeanByStatic"));
 	}
+	
+	@Test
+	public void stringTest() {
+		String aString = "yes";
+		String bString = "yes";
+		if (aString.equals(bString)) {
+			System.out.println(true);
+		}
+	}
 }

@@ -27,17 +27,19 @@
 	 
 	 <bean class="com.go.aopJDK.StudentDaoImpl" id="studentDao"></bean>
 	 <!-- 1. 目标类 -->
-	<!-- <bean class="com.go.daoImpl.UserDaoImpl" id="userDao"></bean> -->
+	 <!-- <bean class="com.go.daoImpl.UserDaoImpl" id="userDao"></bean> -->
 	 <!-- 2.前置通知 -->
 	 <bean class="com.go.springAop.MyAspect" id="myAspect"></bean>
+	 
 	 <!-- 3.生成的代理对象 -->
 	 <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxyFactoryBean">
 	 	<!-- 代理实现的接口 -->
 	 	<property name="interfaces" value="com.go.dao.UserDao"></property>
-	 	<!-- 目标 -->
+	 	<!-- 代理的目标对象 -->
 	 	<property name="target" ref="userDao"></property>
 	 	<!-- 通知增强的目标 -->
 	 	<property name="interceptorNames" value="myAspect"></property>
+	 	<!-- 是否对类代理而不是接口没设置为ture时 ，使用的是CGLIB 代理 -->
 	 	<property name="proxyTargetClass" value="true"></property>
 	 </bean>
 </beans>
