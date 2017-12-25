@@ -46,4 +46,20 @@ public class TestOgnl {
 		user.setUsername("sir zhou");
 		System.out.println("this username :"+Ognl.getValue("getUsername()",user));
 	}
+	
+	@Test
+	public void test2() {
+		String key = "";
+		switch (key) {
+			case "":
+				
+				break;
+			case "12":
+				
+				break;
+	
+			default:
+				break;
+		}
+	}
 }

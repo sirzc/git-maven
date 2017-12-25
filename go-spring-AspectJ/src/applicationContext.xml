@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+	
+	<bean class="com.go.Aspectj.UserDaoImpl" id="userDao"></bean>
+	<bean class="com.go.Aspectj.MyAspect" id="myAspect"></bean>
+	
+	<aop:config>
+		<aop:aspect ref="myAspect">
+			<!-- 配置切入点，通知最后增强方法有哪些 -->
+			<aop:pointcut expression="execution(* com.go.Aspectj..*.*(..))" id="myPointCut"/>
+			<aop:before method="myBefore" pointcut-ref="myPointCut"/>
+			<aop:after-returning method="myAfterReturning" pointcut-ref="myPointCut" returning="returnVal"/>
+			<aop:around method="myAround" pointcut-ref="myPointCut"/>
+			<aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointCut" throwing="e"/>
+			<aop:after method="myAfter" pointcut-ref="myPointCut"/>
+		</aop:aspect>
+	</aop:config>
+</beans>
