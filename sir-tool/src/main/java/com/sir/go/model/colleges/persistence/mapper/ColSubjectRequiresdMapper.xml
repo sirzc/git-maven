@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sir.go.model.colleges.persistence.dao.ColSubjectRequiresdMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.sir.go.model.colleges.persistence.entity.ColSubjectRequiresd">
+		<id column="id" property="id" />
+		<result column="Coc" property="Coc" />
+		<result column="college_name" property="collegeName" />
+		<result column="college_level" property="collegeLevel" />
+		<result column="major_class" property="majorClass" />
+		<result column="subject" property="subject" />
+	</resultMap>
+
+</mapper>
