@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excels>
+	<!-- excel标签参看:ExcelDefinition,Field标签参看:FieldValue -->
+
+
+	<excel id="question" class="com.sirzc.go.excel.Question" 
+	sheetname="测验题" enableStyle="true" defaultAlign="center" sheetIndex="0">
+		<field name="questionTitle" title="题目名称"/>
+		<field name="factorId" title="因子类型" />
+		<field name="sort" title="排序"/>
+		<field name="options.tip1" title="选项一"/>
+		<field name="options.tip2" title="选项二"/>
+		<field name="options.tip3" title="选项三"/>
+		<field name="options.tip4" title="选项四"/>
+		<field name="options.tip5" title="选项五"/>
+		<field name="options.tip6" title="选项六"/>
+	</excel>
+
+	
+</excels>

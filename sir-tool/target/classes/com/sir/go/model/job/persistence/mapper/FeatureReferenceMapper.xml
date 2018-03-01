@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sir.go.model.job.persistence.dao.FeatureReferenceMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.sir.go.model.job.persistence.entity.FeatureReference">
+		<id column="Fid" property="Fid" />
+		<result column="Element_Name" property="ElementName" />
+		<result column="Element_Name_Chinese" property="ElementNameChinese" />
+		<result column="Element_ID" property="ElementID" />
+		<result column="Description" property="Description" />
+		<result column="Description_Chinese" property="DescriptionChinese" />
+	</resultMap>
+
+</mapper>
